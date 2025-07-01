@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects</title>
+    <style>
+        #background {
+            background-color: pink;
+            height: 500px;
+            width: 400px;
+        }
+        #gradient {
+            height: 500px;
+            width: 400px;
+            background-color: aqua;
+            background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
+        }
+        @keyframes effect{
+            0% {background-color: violet;}
+            25% {background-color: indigo;}
+            50% {background-color: blue;}
+            75% {background-color: green;}
+            100% {background-color: yellow;}
+        }
+        #animations {
+            height: 500px;
+            width: 400px;
+            background-color: violet;
+            animation-name: effect;
+            animation-duration: 10s;
+        }
+    </style>
+</head>
+<body>
+    <div id="background" style="text-align: center;font-size: 40px;">
+        <h1><strong>THE EFFECTS PAGE</strong></h1>
+    </div><div id="gradient" style="text-align: center;font-size: 40px;">
+        <h1><strong>THE EFFECTS PAGE</strong></h1>
+    </div>
+    <div id="animations" style="text-align: center;font-size: 40px;">
+        <h1><strong>THE EFFECTS PAGE</strong></h1>
+    </div>
+</body>
+</html>
